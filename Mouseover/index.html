@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover</title>
+    <style>
+        body{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #p{
+            background-color: #ff0000;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <p id="p">Mouseover on this text to <b>Hide</b> to</p>
+    <script>
+        let p =  document.getElementById('p')
+       p.addEventListener('mouseover',function(){
+p.innerHTML = "";
+        })
+    </script>
+</body>
+</html>
